@@ -11,4 +11,13 @@ public class Stack<T extends Comparable<T>> {
         linkedList.show();
     }
 
+    public T pop() {
+        return linkedList.pop();
+    }
+
+    public void peek() {
+        Integer peeked = (Integer) linkedList.pop();
+        System.out.println("The peek element is " + peeked);
+        linkedList.push((T) peeked);
+    }
 }
